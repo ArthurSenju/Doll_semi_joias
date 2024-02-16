@@ -1,0 +1,134 @@
+body{
+    background: #fff1f8 !important;
+}
+.line-container {
+    position: relative;
+    width: 100%;
+    height: 50px; /* Altura da linha */
+  }
+  
+.line {
+position: absolute;
+top: 50%;
+left: 100px;
+right: 100px;
+border-top: 1px solid #D69B19;; /* Estilo da linha */
+}
+
+.text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: white; /* Cor de fundo para destacar o texto */
+padding: 0 10px; /* Espaçamento ao redor do texto */
+}
+/* header */
+    .imagemLogo{
+        width: 100%;
+        height: 70px;
+        justify-content: center;
+        display: flex;
+    }
+    .toolBar{
+        height: 150px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .toolBar .imagemLogo img {
+        height: 100%;
+    }
+    .toolBar hr {
+        color: #D69B19;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;    
+    }
+    .menu nav {
+        background: transparent !important;
+    }
+
+/* section banner */
+    .banner{
+        width: 95%;
+        height: 600px;
+        margin-left: 40px;
+    }
+    .banner img {
+        width: 100%;
+        height: 100%;
+    }
+/* section conjuntos */
+    .card1{
+        border-radius: 10px;
+        border: 1px solid #D69B19;;
+        height: 300px;
+        width: 300px;
+        margin-left: 25px;
+    }
+    .card1 img {
+        width: 80%;
+        height: 60%;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .card1 hr {
+        color: #D69B19;
+        width: 90%;  
+        margin-left: 15px;  
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+    .descricaoConjunto {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+/* section banner */
+    .bannerFinal{
+        width: 95%;
+        height: 600px;
+        margin-left: 40px;
+    }
+    .bannerFinal img {
+        width: 100%;
+        height: 100%;
+    }
+/* footer */
+    footer .container {
+        width: 100%;
+        height: 100px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .container .box {
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .container .box img {
+        width: 100px;
+    }
+
+    footer .container .box ion-icon {
+        padding: 0 20px;
+        font-size: 1.8rem;
+        color: #0f5c9e;
+    }
+
+    footer .container .box p {
+        font-size: 1rem;
+        color: #0f5c9e;
+        line-height: 30px;
+        font-weight: 600;
+    }
