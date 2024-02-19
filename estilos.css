@@ -20,7 +20,7 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-background-color: white; /* Cor de fundo para destacar o texto */
+background-color: #fff1f8; /* Cor de fundo para destacar o texto */
 padding: 0 10px; /* Espaçamento ao redor do texto */
 }
 /* header */
@@ -34,6 +34,7 @@ padding: 0 10px; /* Espaçamento ao redor do texto */
         height: 150px;
         width: 100%;
         margin-left: 0;
+        margin-bottom: 20px;
     }
     .toolBar .imagemLogo img {
         height: 100%;
@@ -90,7 +91,9 @@ padding: 0 10px; /* Espaçamento ao redor do texto */
         justify-content: center;
         width: 100%;
     }
-/* section banner */
+/* section Sobre nós */
+
+/* section banner final */
     .bannerFinal{
         width: 95%;
         height: 600px;
