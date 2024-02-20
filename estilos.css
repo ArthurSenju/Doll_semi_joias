@@ -10,8 +10,16 @@ body{
     background: white !important;
     overflow-x: hidden;
 }
-
+#hrFooter{
+    display: none;
+}
 .mobile-only{
+    display: none;
+}
+.somenteMobile{
+    display: none;
+}
+.mobile{
     display: none;
 }
 
@@ -371,9 +379,14 @@ font-family: "Courgette", cursive;
             .aneis .cards{
                 display: none;
             }
+
+            .aneis .mobile-only{
+                display: flex;
+                justify-content: center;
+            }
             .aneisMobile{
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(1, 1fr);
                 grid-gap: 20px;
                 width: 97%;
                 justify-items: center;
@@ -381,17 +394,119 @@ font-family: "Courgette", cursive;
             .itemGrid {
                 text-align: center;
                 flex: 0 0 auto;
-                width: 172px;
-                height: 200px;
-                border-bottom: 1px solid #D69B19;
-                border-right: 1px solid #D69B19;
-                border-left: 1px solid #D69B19;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
+                width: 75%;
+                height: max-content;
+                border: 1px solid #D69B19;               
+                border-radius: 10px;
             }
             .itemGrid img{
                 width: 170px;
                 max-height: 150px;
+                border-radius: 10px;
+                margin-top: 10px;
             }
+            .itemGrid hr{
+                color: #D69B19;
+                width: 90%;  
+                margin-left: 15px;
+            }
+        /* Pulseiras */
+            #pulseiras{
+                display: none;
+            }
+            .pulseiras{
+                display: none;
+            }
+        /* Colares */
+            .colares .cards{
+                display: none;
+            }
+            .carousel2 {
+                overflow: hidden;
+                width: 300px;
+                height: max-content;
+                margin: 0 auto;
+                border: 1px solid #D69B19;
+                border-radius: 10px;
+                padding-top: 20px;
+                padding-bottom: 10px;
+            
+            }
+              
+            .carousel-items2 {
+                display: flex;
+                justify-content: center;
+                height: min-content;
+                width: 300px !important;
+            }
+              
+            .item2 {
+                flex: 0 0 auto;
+                width: 170px;
+                height: 200px;
+                margin-right: 10px;
+                border: 0,5px solid black;
+                border-radius: 10px;
+                background-color: #ddd;
+            }
+            .item2 img{
+                width: 170px;
+                max-height: 150px;
+            }
+        /* Brincos */
+            .brincos .cards{
+                display: none;
+            }
+        /* Sobre nós */
+            .sobreNós .container {
+                display: none;
+            }
+            .sobreNós{
+                background: none;
+                height: max-content;
+            }
+            .mobile{
+                display: flex;
+                justify-content: center;
+                width: 300px;
+                height: max-content;
+                text-align: center ;
+            }
+            .mobile p {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #D69B19;
+                font-weight: bold;
+            }
+        /* Banner final */
+            .bannerFinal{
+                display: none;
+            }
+        .whatsapp-icon{
+            display: none;
+        }
+        /* footer */
+        footer .container {
+            flex-direction: column;
+            position: relative;
+        }
+    
+        footer .container .box {
+            width: 100%;
+            margin-top: 10px;
+            flex-direction: none;
+        }
+        footer .container .box p {
+            font-size: 15px;
+        }
+    
+        footer .container .box img {
+            width: 50px;
+            display: none;
+        }
+        #hrFooter {
+            color:#D69B19;
+            display: block;
+        }
 
     }
