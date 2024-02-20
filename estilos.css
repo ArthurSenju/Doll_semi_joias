@@ -8,7 +8,13 @@ html {
 body{
     /* background: #fff1f8 !important; */
     background: white !important;
+    overflow-x: hidden;
 }
+
+.mobile-only{
+    display: none;
+}
+
 .line-container {
     position: relative;
     width: 100%;
@@ -289,4 +295,103 @@ font-family: "Courgette", cursive;
         line-height: 30px;
         font-weight: 500;
         font-family: "Courgette", cursive;
+    }
+/* Responsividade */
+    @media only screen and (max-width: 900px) {
+        body {
+            overflow-x: hidden;
+        }
+        /* Menu */
+            .menu{
+                display: none;
+            }
+            .toolBar .line-container {
+                display: none;
+            }
+            .toolBar{
+                margin-bottom: 0px;
+                height: max-content;
+            }
+        /* Banner */
+            .banner{
+                display: none;
+            }
+        /* Conjuntos */
+            .mobile-only{
+                display: block;
+            }
+            .conjuntos .cards{
+                display: none;
+            }
+            .carousel {
+                overflow: hidden;
+                width: 300px;
+                height: max-content;
+                margin: 0 auto;
+                border: 1px solid #D69B19;
+                border-radius: 10px;
+                padding-top: 20px;
+                padding-bottom: 10px;
+            
+              }
+              
+              .carousel-items {
+                display: flex;
+                justify-content: center;
+                height: min-content;
+                width: 300px !important;
+              }
+              
+              .item {
+                flex: 0 0 auto;
+                width: 170px;
+                height: 200px;
+                margin-right: 10px;
+                border: 0,5px solid black;
+                border-radius: 10px;
+                background-color: #ddd;
+              }
+              .item img{
+                width: 170px;
+                max-height: 150px;
+              }
+              .textoDescricaoMobile{
+                font-weight: bold;                
+                display: flex;
+                justify-content: center;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              }
+              .botoes{
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+              }
+        /* Aneis */
+            .aneis .cards{
+                display: none;
+            }
+            .aneisMobile{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+                width: 97%;
+                justify-items: center;
+            }              
+            .itemGrid {
+                text-align: center;
+                flex: 0 0 auto;
+                width: 172px;
+                height: 200px;
+                border-bottom: 1px solid #D69B19;
+                border-right: 1px solid #D69B19;
+                border-left: 1px solid #D69B19;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .itemGrid img{
+                width: 170px;
+                max-height: 150px;
+            }
+
     }
